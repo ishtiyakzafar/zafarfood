@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);  
+}
+.logo{
+    width: 20%;
+    height: 100px;
+    position: relative; 
+}
+.logo img{
+    position: absolute;
+    top: 13px;
+    left: 89px;
+}
+.menu{
+    width: 80%;
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;  
+}
+.menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white; 
+}
+.menu a:hover{
+    color:#eb7620;
+    transition: 0.9s;
+}
+.bgimg{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bgimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home_content{
+    text-align: center;
+    color :white;
+    margin-top: 92px;  
+}
+.home_content h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.home_content button{
+    margin-top: 10px; 
+}
+.btn{
+    padding: 6px 17px;
+    background:transparent;
+    color:white;
+    border:1px solid #eb7620;
+    text-transform: capitalize; 
+    cursor: pointer;
+}
+.home_content button:hover{
+    background: #eb7620;
+    transition: 0.9s;
+}
+
+/* ------services--------- */
+
+.services .demo{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.img_box{
+    display: flex;
+   
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+.box1{
+    border: 2px solid red;
+    padding: 15px 15px;
+    margin: 0 15px;
+    border-radius: 15px;
+    background: rgb(233, 230, 230);
+}
+.box1 img{
+   
+    height: 155px;
+}
+.box1 h2{
+    margin: 10px 0;
+    
+}
+.box1 p{
+    font-size: 13px;
+    font-weight: 600;;
+}
+
+
+.our_client{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.2)), url('clint.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.setclient p{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 30px;
+}
+.client{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 6px;
+   
+    
+}
+.client1 img{
+    width: 100px;
+}
+.client1{
+    /* border: 2px solid red; */
+    padding: 20px 20px;
+}
+
+
+/* -------contact------ */
+.contact h1 {
+    text-align: center;
+    font-size: 30px;
+    margin:20px 0;
+}
+
+.form_group input,
+.form_group textarea{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.contact_box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; 
+}
+.contact_box form{
+    width: 40%;
+    margin-top: 20px;   
+}
+.form_group label{
+    font-weight: 500;
+}
+.contact_box{
+    background: rgb(233, 230, 230); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+#btn_cont {
+   
+    background:transparent;
+    color:black;
+    border:1px solid #eb7620;
+    cursor: pointer;
+}
+#btn_cont:hover{
+    background: #eb7620;
+    transition: 0.9s;
+}
+
+
+
+.setfoter{
+    background: black;
+    text-align:center ;
+    height: 50px;
+    color: white;
+    padding-top: 25px;
+}
+
+
+
+
+/* ------media quary-------
+
+
+big land scapetablet, laptops and desktop. */
+@media(min-width: 1200px){
+	
+}
+
+/* tablet, landsacpe,low resolution laptop and desktop */
+@media(max-width: 990px){
+    .navbar{
+        display: block;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        top: 13px;
+        left: 46%;
+    }
+    .menu{
+        width: 100%;
+        height: 28px;
+        background: rgba(0, 0, 0, 0.5);  
+        line-height: normal;
+    }
+    
+   
+
+}
+
+/* portrait tablet,e-reader kindle */
+@media(max-width: 804px){
+    .img_box{
+        display: block;
+    }
+    .box1{
+        margin: 20px 20px;
+    }
+    .home_content h1 {
+        font-size: 40px;  
+    }
+    .client {
+        flex-wrap: wrap;   
+    }
+    .contact_box form {
+        width: 55%;
+    }
+
+}
+
+/* smartphone, android phone, landscape iphone */
+@media(max-width: 720px){
+    .our_client { 
+        height: 301px; 
+    }
+    
+
+}
+@media(max-width: 580px){
+    .our_client { 
+        height: 368px; 
+    }
+    
+
+}
+
+
+/* smartphone, portrait iphone, portrait 480x320 phones (androids) */
+@media(max-width: 422px){
+    .our_client { 
+        height: 450px; 
+    }
+    .home_content h1 {
+        font-size: 35px;
+    }
+    .home_content {
+        margin-top: 67px;
+    }
+    .menu a {
+        font-size: 1rem;
+    }
+    
+
+	
+}
+
+
+
+
+
